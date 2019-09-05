@@ -1,1 +1,1 @@
-# Jen_Mah_MAD
+Jennifer Mah's Mobile App Development
