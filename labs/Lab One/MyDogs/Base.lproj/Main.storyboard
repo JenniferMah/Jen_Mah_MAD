@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyDogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Good Boys" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO1-hM-Mp6">
+                                <rect key="frame" x="113.00000000000001" y="81" width="188.33333333333337" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNk-EH-YW9">
+                                <rect key="frame" x="50" y="138" width="72" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Randy">
+                                    <color key="titleColor" red="0.48075572389999999" green="0.74417968570000004" blue="0.32801898769999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XaT-Xg-62u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-sy-lVb">
+                                <rect key="frame" x="181.66666666666666" y="138" width="51" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Sam">
+                                    <color key="titleColor" red="0.19515046902915403" green="0.5568564896760303" blue="0.80922826776649748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eon-Sf-UEu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brown" translatesAutoresizingMaskIntoConstraints="NO" id="tKU-DG-Alc">
+                                <rect key="frame" x="44" y="204" width="326" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Sam and I love to go on walks!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO9-ib-0w8">
+                                <rect key="frame" x="34" y="780" width="347" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl9-7Q-7J2">
+                                <rect key="frame" x="300" y="138" width="70" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Boo">
+                                    <color key="titleColor" red="1" green="0.4887863248" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5zB-4v-7F6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dO9-ib-0w8" firstAttribute="top" secondItem="tKU-DG-Alc" secondAttribute="bottom" constant="8" id="1vv-c4-oXu"/>
+                            <constraint firstItem="Fl9-7Q-7J2" firstAttribute="top" secondItem="ZO1-hM-Mp6" secondAttribute="bottom" constant="21" id="5HT-yg-Gp1"/>
+                            <constraint firstItem="ZO1-hM-Mp6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Nj-0x-kgq"/>
+                            <constraint firstItem="tKU-DG-Alc" firstAttribute="top" secondItem="rNk-EH-YW9" secondAttribute="bottom" constant="29" id="G81-bH-I4n"/>
+                            <constraint firstItem="dO9-ib-0w8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="QwZ-NF-zeQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dO9-ib-0w8" secondAttribute="bottom" constant="27" id="Vgg-i7-HBr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tKU-DG-Alc" secondAttribute="bottom" constant="90" id="Wha-c1-f3R"/>
+                            <constraint firstItem="tKU-DG-Alc" firstAttribute="top" secondItem="Fl9-7Q-7J2" secondAttribute="bottom" constant="30" id="Ysv-ID-cDb"/>
+                            <constraint firstItem="rNk-EH-YW9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="bWV-sk-JmL"/>
+                            <constraint firstItem="tKU-DG-Alc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cOj-64-1Ca"/>
+                            <constraint firstItem="rNk-EH-YW9" firstAttribute="top" secondItem="ZO1-hM-Mp6" secondAttribute="bottom" constant="21" id="chG-Pp-9EA"/>
+                            <constraint firstItem="CsV-sy-lVb" firstAttribute="leading" relation="lessThanOrEqual" secondItem="rNk-EH-YW9" secondAttribute="trailing" constant="78.5" id="dxQ-pe-ZZ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tKU-DG-Alc" secondAttribute="trailing" constant="44" id="i7H-9a-tAS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fl9-7Q-7J2" secondAttribute="trailing" constant="44" id="jtX-QK-X84"/>
+                            <constraint firstItem="CsV-sy-lVb" firstAttribute="top" secondItem="ZO1-hM-Mp6" secondAttribute="bottom" constant="21" id="mr6-j7-fbT"/>
+                            <constraint firstItem="CsV-sy-lVb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nvV-0O-dPi"/>
+                            <constraint firstItem="Fl9-7Q-7J2" firstAttribute="leading" relation="lessThanOrEqual" secondItem="CsV-sy-lVb" secondAttribute="trailing" constant="67.5" id="oDE-Av-K0r"/>
+                            <constraint firstItem="tKU-DG-Alc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="ufq-nR-PbJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dO9-ib-0w8" secondAttribute="trailing" constant="33" id="xFd-dz-vwd"/>
+                            <constraint firstItem="tKU-DG-Alc" firstAttribute="top" secondItem="CsV-sy-lVb" secondAttribute="bottom" constant="29" id="xVj-aa-BVk"/>
+                            <constraint firstItem="tKU-DG-Alc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="y5f-ih-5hd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="DogText" destination="dO9-ib-0w8" id="Gqi-pK-wjD"/>
+                        <outlet property="dog" destination="tKU-DG-Alc" id="NjC-fS-fVQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brown" width="660" height="825"/>
+    </resources>
+</document>
