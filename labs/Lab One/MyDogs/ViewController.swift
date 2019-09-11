@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             DogText.text="My name is Sam and I love to go on walks!"
         }
     }
-    
+    //All images found on google images
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
