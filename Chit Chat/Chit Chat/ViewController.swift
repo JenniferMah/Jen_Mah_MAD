@@ -12,9 +12,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 // To help get started on the basic layout of a table view I used this resource and apple's documentation. http://www.thomashanning.com/uitableview-tutorial-for-beginners/
     
 //arrays for chat topics
-    let life = [ "Are you named after anyone?", "What would cause you to leave your current city?", "Who would you like to be for a day?", "What’s your favorite country to visit?", "A book you read in school that positively impacted you?", "Best gift you have ever recieved?" , "How did you meet your best friend?" , "One fact no one knows about you?" , "Most embarrassing memory from your childhood?", "Where did you grow up?", "If you were a crayon, what color would you be?" , "A person you want to habe coffee with and why?", "Best way to decompress?", "What’s your favorite country to visit?" , "When was the last time you cried and why?", "If you were another person would you be friends with you?" , "Have you ever broken any bones?", "Who do you miss the most?" , "What’s your spirit animal?"]
-    let deep = [" Are humans better at creation or destruction?" , "What are the chances that we are in a simulation right now?" , " If you had to sum the human species in three words, what would they be?", "What’s the most uplifting thing happening in the world right now?" , "What is a miricle that happens everyday?", "What is a year of life worth?" , "What does the ideal life look like?", " Are emotions necessary for human survival?", "What is holding humans back from working together on a global scale?" , "What does creativity mean to you?" , "Will humans live in space or will they be destroyed first?", "What stops people from understanding themselves?" , "What makes a person evil?", "What event would you rather die than live through?" , "What is the true purpose of art in society?" , "What came first the chicken or the egg?" , "What’s the hardest life choice you’ve made?", "What is holding humans back achieving world peace?", "What are your main goals in life"]
-    let short = ["What subject would you teach at school?", "What makes you laugh no matter what?", "What job would you be absolutely terrible at?", "What do most people think about you that is absolutely not true?" , "What class should they teach in high school but don’t?", "What’s one thing you need to have in your fridge at any given time?", "Show me your most bizarre talent", "What’s the best compliment you’ve ever recieved?", "One habit you wish you could break?","Do you have any nicknames?" , "What surprises you the most about people?", "One word to describe your first kiss" , "Who or what is your nemesis?", "what have you have always wanted to try but were to scared to do?", "Do you have any daily rituals?" , "If you could raid one person’s closet who would it be?", "What's the ultimate comfort food?"]
+    var life = [ "Are you named after anyone?", "What would cause you to leave your current city?", "Who would you like to be for a day?", "What’s your favorite country to visit?", "A book you read in school that positively impacted you?", "Best gift you have ever recieved?" , "How did you meet your best friend?" , "One fact no one knows about you?" , "Most embarrassing memory from your childhood?", "Where did you grow up?", "If you were a crayon, what color would you be?" , "A person you want to habe coffee with and why?", "Best way to decompress?", "What’s your favorite country to visit?" , "When was the last time you cried and why?", "If you were another person would you be friends with you?" , "Have you ever broken any bones?", "Who do you miss the most?" , "What’s your spirit animal?"]
+    var deep = [" Are humans better at creation or destruction?" , "What are the chances that we are in a simulation right now?" , " If you had to sum the human species in three words, what would they be?", "What’s the most uplifting thing happening in the world right now?" , "What is a miricle that happens everyday?", "What is a year of life worth?" , "What does the ideal life look like?", " Are emotions necessary for human survival?", "What is holding humans back from working together on a global scale?" , "What does creativity mean to you?" , "Will humans live in space or will they be destroyed first?", "What stops people from understanding themselves?" , "What makes a person evil?", "What event would you rather die than live through?" , "What is the true purpose of art in society?" , "What came first the chicken or the egg?" , "What’s the hardest life choice you’ve made?", "What is holding humans back achieving world peace?", "What are your main goals in life"]
+    var short = ["What subject would you teach at school?", "What makes you laugh no matter what?", "What job would you be absolutely terrible at?", "What do most people think about you that is absolutely not true?" , "What class should they teach in high school but don’t?", "What’s one thing you need to have in your fridge at any given time?", "Show me your most bizarre talent", "What’s the best compliment you’ve ever recieved?", "One habit you wish you could break?","Do you have any nicknames?" , "What surprises you the most about people?", "One word to describe your first kiss" , "Who or what is your nemesis?", "what have you have always wanted to try but were to scared to do?", "Do you have any daily rituals?" , "If you could raid one person’s closet who would it be?", "What's the ultimate comfort food?"]
     var savedMessages = [topics]()
     var ClassItemsArray = [topics]()
 
@@ -100,30 +100,47 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let topic = topics()
             topic.chatLines = life[i]
             topic.color = "lifeColor"
+            topic.category = "life"
+
             ClassItemsArray.append(topic)
         }
         for j in 0 ... deep.count-1{
             let topic = topics()
             topic.chatLines = deep[j]
             topic.color = "deepColor"
+            topic.category = "deep"
+
             ClassItemsArray.append(topic)
         }
         for k in 0 ... short.count-1{
             let topic = topics()
             topic.chatLines = short[k]
             topic.color = "shortColor"
+            topic.category = "short"
+
             ClassItemsArray.append(topic)
         }
     }
 
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var theme: String?
         if topicControl.selectedSegmentIndex == 0 || topicControl.selectedSegmentIndex == 1 || topicControl.selectedSegmentIndex == 2{
             let text = rowsToDisplay[indexPath.row]
             for i in 0 ... ClassItemsArray.count-1{
                 if ClassItemsArray[i].chatLines == text{
+                    theme = ClassItemsArray[i].category
                     savedMessages.append(ClassItemsArray[i])
                 }
+            }
+            //Delete item from arrays once saved
+            rowsToDisplay.remove(at: indexPath.row)
+            if theme == "life"{
+                life.remove(at: indexPath.row)
+            }else if theme == "deep"{
+                deep.remove(at: indexPath.row)
+            }else if theme == "short"{
+                short.remove(at: indexPath.row)
             }
             
             let alertConroller = UIAlertController(title: "Chit Chat Topic Saved!", message: "You have saved: " + text, preferredStyle: .alert)
@@ -131,7 +148,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             alertConroller.addAction(alertAction)
             present(alertConroller,animated:true, completion: nil)
         }
-        
+        tableView.reloadData()
+
     }
     
     //how many sections the table view has (required for table view)
@@ -175,7 +193,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete && topicControl.selectedSegmentIndex != 0 && topicControl.selectedSegmentIndex != 1 && topicControl.selectedSegmentIndex != 2 {
             //remove the row from the table view
-            print( indexPath.row)
             rowsToDisplay.remove(at: indexPath.row)
             savedMessages.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .bottom)

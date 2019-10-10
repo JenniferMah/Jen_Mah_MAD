@@ -12,4 +12,6 @@ class topics{
     //attributes of topics
     var chatLines : String?
     var color : String?
+    var category : String?
+
 }
