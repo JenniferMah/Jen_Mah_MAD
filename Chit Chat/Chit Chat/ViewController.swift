@@ -122,7 +122,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
 
-
+// I used the tutorial video referenced above to see how the built in method to check if a table view cell was selected. I used a simlar alert like the tutorial but I also used what we already learned in class about alerts to help create this alert.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var theme: String?
         if topicControl.selectedSegmentIndex == 0 || topicControl.selectedSegmentIndex == 1 || topicControl.selectedSegmentIndex == 2{
@@ -157,7 +157,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 1
     }
     
-    //number of rows in the section
+    //number of rows in the section (required for table view)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rowsToDisplay.count
     }
@@ -206,9 +206,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
 
     }
-
-    
-    
-    
 }
 
