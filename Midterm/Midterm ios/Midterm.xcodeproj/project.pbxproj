@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		285278E1234953AE008FF8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285278E0234953AE008FF8F9 /* AppDelegate.swift */; };
-		285278E3234953AE008FF8F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285278E2234953AE008FF8F9 /* ViewController.swift */; };
-		285278E6234953AE008FF8F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285278E4234953AE008FF8F9 /* Main.storyboard */; };
-		285278E8234953B0008FF8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285278E7234953B0008FF8F9 /* Assets.xcassets */; };
-		285278EB234953B0008FF8F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285278E9234953B0008FF8F9 /* LaunchScreen.storyboard */; };
-		285278F7234D0A83008FF8F9 /* topicsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285278F6234D0A83008FF8F9 /* topicsClass.swift */; };
+		28BAA9EE2356170600C3C986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAA9ED2356170600C3C986 /* AppDelegate.swift */; };
+		28BAA9F02356170600C3C986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAA9EF2356170600C3C986 /* ViewController.swift */; };
+		28BAA9F32356170600C3C986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BAA9F12356170600C3C986 /* Main.storyboard */; };
+		28BAA9F52356170900C3C986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28BAA9F42356170900C3C986 /* Assets.xcassets */; };
+		28BAA9F82356170900C3C986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BAA9F62356170900C3C986 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		285278DD234953AE008FF8F9 /* Chit Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chit Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		285278E0234953AE008FF8F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		285278E2234953AE008FF8F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		285278E5234953AE008FF8F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		285278E7234953B0008FF8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		285278EA234953B0008FF8F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		285278EC234953B0008FF8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		285278F6234D0A83008FF8F9 /* topicsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topicsClass.swift; sourceTree = "<group>"; };
+		28BAA9EA2356170600C3C986 /* Midterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BAA9ED2356170600C3C986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28BAA9EF2356170600C3C986 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28BAA9F22356170600C3C986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28BAA9F42356170900C3C986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28BAA9F72356170900C3C986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28BAA9F92356170900C3C986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		285278DA234953AE008FF8F9 /* Frameworks */ = {
+		28BAA9E72356170600C3C986 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		285278D4234953AE008FF8F9 = {
+		28BAA9E12356170600C3C986 = {
 			isa = PBXGroup;
 			children = (
-				285278DF234953AE008FF8F9 /* Chit Chat */,
-				285278DE234953AE008FF8F9 /* Products */,
+				28BAA9EC2356170600C3C986 /* Midterm */,
+				28BAA9EB2356170600C3C986 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		285278DE234953AE008FF8F9 /* Products */ = {
+		28BAA9EB2356170600C3C986 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				285278DD234953AE008FF8F9 /* Chit Chat.app */,
+				28BAA9EA2356170600C3C986 /* Midterm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		285278DF234953AE008FF8F9 /* Chit Chat */ = {
+		28BAA9EC2356170600C3C986 /* Midterm */ = {
 			isa = PBXGroup;
 			children = (
-				285278E0234953AE008FF8F9 /* AppDelegate.swift */,
-				285278E2234953AE008FF8F9 /* ViewController.swift */,
-				285278E4234953AE008FF8F9 /* Main.storyboard */,
-				285278F6234D0A83008FF8F9 /* topicsClass.swift */,
-				285278E7234953B0008FF8F9 /* Assets.xcassets */,
-				285278E9234953B0008FF8F9 /* LaunchScreen.storyboard */,
-				285278EC234953B0008FF8F9 /* Info.plist */,
+				28BAA9ED2356170600C3C986 /* AppDelegate.swift */,
+				28BAA9EF2356170600C3C986 /* ViewController.swift */,
+				28BAA9F12356170600C3C986 /* Main.storyboard */,
+				28BAA9F42356170900C3C986 /* Assets.xcassets */,
+				28BAA9F62356170900C3C986 /* LaunchScreen.storyboard */,
+				28BAA9F92356170900C3C986 /* Info.plist */,
 			);
-			path = "Chit Chat";
+			path = Midterm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		285278DC234953AE008FF8F9 /* Chit Chat */ = {
+		28BAA9E92356170600C3C986 /* Midterm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 285278EF234953B0008FF8F9 /* Build configuration list for PBXNativeTarget "Chit Chat" */;
+			buildConfigurationList = 28BAA9FC2356170900C3C986 /* Build configuration list for PBXNativeTarget "Midterm" */;
 			buildPhases = (
-				285278D9234953AE008FF8F9 /* Sources */,
-				285278DA234953AE008FF8F9 /* Frameworks */,
-				285278DB234953AE008FF8F9 /* Resources */,
+				28BAA9E62356170600C3C986 /* Sources */,
+				28BAA9E72356170600C3C986 /* Frameworks */,
+				28BAA9E82356170600C3C986 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Chit Chat";
-			productName = "Chit Chat";
-			productReference = 285278DD234953AE008FF8F9 /* Chit Chat.app */;
+			name = Midterm;
+			productName = Midterm;
+			productReference = 28BAA9EA2356170600C3C986 /* Midterm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		285278D5234953AE008FF8F9 /* Project object */ = {
+		28BAA9E22356170600C3C986 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Jennifer Mah";
 				TargetAttributes = {
-					285278DC234953AE008FF8F9 = {
+					28BAA9E92356170600C3C986 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 285278D8234953AE008FF8F9 /* Build configuration list for PBXProject "Chit Chat" */;
+			buildConfigurationList = 28BAA9E52356170600C3C986 /* Build configuration list for PBXProject "Midterm" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 285278D4234953AE008FF8F9;
-			productRefGroup = 285278DE234953AE008FF8F9 /* Products */;
+			mainGroup = 28BAA9E12356170600C3C986;
+			productRefGroup = 28BAA9EB2356170600C3C986 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				285278DC234953AE008FF8F9 /* Chit Chat */,
+				28BAA9E92356170600C3C986 /* Midterm */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		285278DB234953AE008FF8F9 /* Resources */ = {
+		28BAA9E82356170600C3C986 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285278EB234953B0008FF8F9 /* LaunchScreen.storyboard in Resources */,
-				285278E8234953B0008FF8F9 /* Assets.xcassets in Resources */,
-				285278E6234953AE008FF8F9 /* Main.storyboard in Resources */,
+				28BAA9F82356170900C3C986 /* LaunchScreen.storyboard in Resources */,
+				28BAA9F52356170900C3C986 /* Assets.xcassets in Resources */,
+				28BAA9F32356170600C3C986 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		285278D9234953AE008FF8F9 /* Sources */ = {
+		28BAA9E62356170600C3C986 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285278F7234D0A83008FF8F9 /* topicsClass.swift in Sources */,
-				285278E3234953AE008FF8F9 /* ViewController.swift in Sources */,
-				285278E1234953AE008FF8F9 /* AppDelegate.swift in Sources */,
+				28BAA9F02356170600C3C986 /* ViewController.swift in Sources */,
+				28BAA9EE2356170600C3C986 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		285278E4234953AE008FF8F9 /* Main.storyboard */ = {
+		28BAA9F12356170600C3C986 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				285278E5234953AE008FF8F9 /* Base */,
+				28BAA9F22356170600C3C986 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		285278E9234953B0008FF8F9 /* LaunchScreen.storyboard */ = {
+		28BAA9F62356170900C3C986 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				285278EA234953B0008FF8F9 /* Base */,
+				28BAA9F72356170900C3C986 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		285278ED234953B0008FF8F9 /* Debug */ = {
+		28BAA9FA2356170900C3C986 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		285278EE234953B0008FF8F9 /* Release */ = {
+		28BAA9FB2356170900C3C986 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,36 +278,34 @@
 			};
 			name = Release;
 		};
-		285278F0234953B0008FF8F9 /* Debug */ = {
+		28BAA9FD2356170900C3C986 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32C86W6J58;
-				INFOPLIST_FILE = "Chit Chat/Info.plist";
+				INFOPLIST_FILE = Midterm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CU-Boulder.Chit-Chat";
+				PRODUCT_BUNDLE_IDENTIFIER = "CU-Boulder.Midterm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		285278F1234953B0008FF8F9 /* Release */ = {
+		28BAA9FE2356170900C3C986 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32C86W6J58;
-				INFOPLIST_FILE = "Chit Chat/Info.plist";
+				INFOPLIST_FILE = Midterm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "CU-Boulder.Chit-Chat";
+				PRODUCT_BUNDLE_IDENTIFIER = "CU-Boulder.Midterm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,25 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		285278D8234953AE008FF8F9 /* Build configuration list for PBXProject "Chit Chat" */ = {
+		28BAA9E52356170600C3C986 /* Build configuration list for PBXProject "Midterm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				285278ED234953B0008FF8F9 /* Debug */,
-				285278EE234953B0008FF8F9 /* Release */,
+				28BAA9FA2356170900C3C986 /* Debug */,
+				28BAA9FB2356170900C3C986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		285278EF234953B0008FF8F9 /* Build configuration list for PBXNativeTarget "Chit Chat" */ = {
+		28BAA9FC2356170900C3C986 /* Build configuration list for PBXNativeTarget "Midterm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				285278F0234953B0008FF8F9 /* Debug */,
-				285278F1234953B0008FF8F9 /* Release */,
+				28BAA9FD2356170900C3C986 /* Debug */,
+				28BAA9FE2356170900C3C986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 285278D5234953AE008FF8F9 /* Project object */;
+	rootObject = 28BAA9E22356170600C3C986 /* Project object */;
 }
