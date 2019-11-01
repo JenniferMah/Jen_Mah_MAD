@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LabSix</string>
+    <string name="riddle">How do you spell cow with 13 letters?</string>
+    <string name="placeholder">cow?</string>
+    <string name="buttonText">Guess</string>
+</resources>
