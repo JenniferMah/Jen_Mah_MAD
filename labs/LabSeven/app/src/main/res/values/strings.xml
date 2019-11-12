@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Dog Breed Suggestions</string>
+    <string name="name">Potential Pet\'s Name</string>
+    <string name="button">Find me a Dog</string>
+
+<!--radio buttons-->
+    <string name="cheap">$</string>
+    <string name="moderate">$$</string>
+    <string name="expensive">$$$</string>
+<!--    Check Box-->
+    <string name="t1"> Playful </string>
+    <string name="t2">Loyal</string>
+    <string name="t3"> Affectionate</string>
+<!--location spinner-->
+    <string-array name="location">
+        <item>House</item>
+        <item>Apartment</item>
+        <item>Town Home</item>
+    </string-array>
+</resources>

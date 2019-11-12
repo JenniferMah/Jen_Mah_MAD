@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
         EditText ReferenceToInput =findViewById(R.id.userAnswer);
         String guess = ReferenceToInput.getText().toString().toLowerCase();
 
-
-
         ImageView ReferenceToImageView = findViewById(R.id.imageView);
         TextView ReferenceToNote=findViewById(R.id.note);
 
