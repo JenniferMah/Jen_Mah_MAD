@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quiz Prototype</string>
+    <string name="score">Score:0</string>
+    <string name="guess">Guess Word</string>
+
+<!--    buttons-->
+    <string name="sub">GUESS</string>
+    <string name="hin">HINT</string>
+    <string name="ski">SKIP</string>
+
+
+</resources>
