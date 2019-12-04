@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Lab Eight</string>
+    <string name="app_name">Fortune</string>
+    <string name="fortune">Fortune Teller App</string>
+    <string name="sumbit">Tell Fortune</string>
+
+
+    <string-array name="fortuneTheme">
+        <item>Love</item>
+        <item>Financial</item>
+        <item>Family </item>
+        <item>Friends </item>
+        <item>Life Advice</item>
+    </string-array>
+    <string name="title_activity_fortune">Fortune</string>
+    <string name="placeHolder">this is a placeholder</string>
+
 </resources>
