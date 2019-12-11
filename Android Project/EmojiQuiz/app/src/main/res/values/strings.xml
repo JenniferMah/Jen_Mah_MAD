@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Emoji Quiz</string>
+    <!-- string labels-->
+    <string name="scoreLabel">Score:</string>
+    <string name="guessLabel">Movie Title Guess</string>
+    <string name="placeHolderHint"> </string>
+    <string name="placeHolderScore">0</string>
+    <!-- Button text-->
+    <string name="guess">Guess</string>
+    <string name="hint">Hint</string>
+    <string name="skip">Skip</string>
+</resources>
