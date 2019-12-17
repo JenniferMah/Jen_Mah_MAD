@@ -8,7 +8,7 @@
     <!--    Radio Buttons-->
     <string name="burrito">burrito</string>
     <string name="taco">taco</string>
-    <!-- Togle -->
+    <!-- Toggle -->
     <string name="gluten">gluten-free</string>
 
     <!--TEXT VIEW HEADING -->
