@@ -44,10 +44,5 @@ public class shareFortune {
         setFortuneInformation(fortuneTheme);
     }
 
-    public void setShareURL(Integer fortuneTheme){
-        setFortuneInformation(fortuneTheme);
-    }
-
-
 
 }

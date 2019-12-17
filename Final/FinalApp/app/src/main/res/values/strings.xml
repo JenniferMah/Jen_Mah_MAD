@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FinalApp</string>
+    <string name="editText">Name</string>
+    <string name="textView">Place Holder</string>
+    <string name="button">Build</string>
+    <string name="find">Find Burrito</string>
+
+    <!--    Radio Buttons-->
+    <string name="burrito">burrito</string>
+    <string name="taco">taco</string>
+    <!-- Togle -->
+    <string name="gluten">gluten-free</string>
+
+    <!--TEXT VIEW HEADING -->
+    <string name="heading">Burrito Builder</string>
+
+    <!--    Toggle Button Meat and Veg-->
+    <string name="meat">Meat</string>
+    <string name="veg">Veggie</string>
+
+    <!--array of items-->
+    <string-array name="spinnerItems">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street </item>
+    </string-array>
+    <string name="title_activity_mexican_food">Burrito</string>
+
+</resources>

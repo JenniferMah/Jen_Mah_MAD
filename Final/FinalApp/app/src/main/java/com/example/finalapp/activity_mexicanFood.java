@@ -1,4 +1,4 @@
-package com.example.labeight;
+package com.example.finalapp;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,48 +12,45 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
 import android.view.View;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class fortuneActivity extends AppCompatActivity {
-    private String RealFortune;
-    private String RealShareURL;
-    private Integer RadioButton;
-
+public class activity_mexicanFood extends AppCompatActivity {
+    private String Place;
+    private String URL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fortune);
+        setContentView(R.layout.activity_mexican_food);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//GETTING FAB INFORMATION
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadShareSite(view);
+                loadSite(view);
             }
         });
 
+
+
         Intent intent = getIntent();
-        RealFortune = intent.getStringExtra("fortune");
-        RealShareURL = intent.getStringExtra("url");
-        RadioButton = intent.getIntExtra("radio",1); //this will use a default value if no number is passed through
+        Place = intent.getStringExtra("location");
+        URL = intent.getStringExtra("url");
 
-        Log.i("shop received", RealFortune);
-        Log.i("url received", RealShareURL);
+        Log.i("shop received", Place);
+        Log.i("url received", URL);
 
-        TextView messageView = findViewById(R.id.fortune);
-        messageView.setText(RealFortune + RadioButton);
+        TextView messageView = findViewById(R.id.rest);
+        messageView.setText("You should check out "+ Place);
+
 
     }
 
-    //Implicit Intent
-    private void loadShareSite(View view){
+    private void loadSite(View view){
         Intent intent = new Intent((Intent.ACTION_VIEW));
-        intent.setData(Uri.parse(RealShareURL));
+        intent.setData(Uri.parse(URL));
         startActivity(intent);
     }
 

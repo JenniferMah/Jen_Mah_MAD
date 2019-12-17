@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
         //Type of house you live in
         String homeLocation = String.valueOf(location.getSelectedItem());
 
-        //cost
+        //cost radio buttons
         int costID = cost.getCheckedRadioButtonId();
 
-        //checkboxes
+        //see if checkboxes are checked
         Boolean playCheck = play.isChecked();
         Boolean loyalCheck = loyal.isChecked();
         Boolean affectionCheck = affection.isChecked();

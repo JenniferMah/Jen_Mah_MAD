@@ -52,4 +52,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/closed" />
 
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="149dp"
+        android:layout_height="85dp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="405dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
